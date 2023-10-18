@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+    
+    body {
+            background-color: white;
+            
+    }
+        body {
+            background-image: -moz-linear-gradient(to botton, red, blue);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color:#000f58;
+            border-radius: 6px;
+            box-shadow: 0px 2px 10px rgb(36, 36, 36);
+            padding: 30px;
+            width: 300px;
+            text-align: center;
+        }
+
+        .container h2 {
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+         color: white;
+         display: block;
+         font-weight: bold;
+         margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid white;
+            border-radius: 3px;
+        }
+
+        .submit-btn {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background-color: white;
+        }
+
+        .login-link {
+            color: white;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .login-link a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .login-link a:hover {
+            color: blue;
+           text-decoration: underline;
+        }   
+         </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Entrar</h2>
+        <form id="signup-form" action="Cadastro.html" method="post">
+             <div class="input-group">
+                <label for="new-username">Usuário:</label>
+                <input type="text" id="new-username" name="new-username" required>
+             </div>
+
+             <div class="input-group">
+                <label for="new-password">Senha:</label>
+                <input type="password" id="new-password" name="new-password" required>
+             </div>
+
+
+        </form>
+    </div>
+    <script>
+        const signupForm = document.querySelector('#signup-form');
+
+        signupForm.addEventListener('submit',(event) => {
+            const newPassword = document.querySelector('#new-password').value;
+            
+            if (newPassword !== confirmPassword) {
+                event.preventDefault();
+                alert("As senhas são diferentes");
+            }
+        });
+    </script>
+</body>
+</html>
