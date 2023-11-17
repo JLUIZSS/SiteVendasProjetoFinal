@@ -1,80 +1,12 @@
-<!DOCTYPE html>
-<html lang="PT-BR">
-<head>
-    <meta charset="ISO-8859-1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/PaginaInicial.css"> 
-    <title>Estudar+educ.</title>
-</head>
-<body>
-    <header>
-		<!--julio-->
-    <p><img src="/img/logo.png"></p>
-
-    <nav class="menu">
-        <ul>
-            <div class="search-container">
-                <input type="text" id="search-box" placeholder="Pesquisar...">
-                <button id="search-button">Buscar</button>
-            </div>
-            <li><a href="SobreNos.html">Produtos</a></li>
-           
-            <li><a href="contato.html">Contato</a></li>
-            <li><a href="AreaDoProfessor.html">Sobre Nós</a></li>
-
-            <div class="container">
-                <h4>Escolha uma opção:</h4>
-                <button class="welcome-button" onclick="window.location.href='/cadastro/cadastro'">Cadastrar</button>
-                
-                
-                <button class="welcome-button" onclick="window.location.href='entre.html'">Entrar</button>
-            
-            </div>
-        </ul>
-    </nav>
-</header>
-<strong><marquee behavior="50" direction="center">Estudar+educ. Os melhores cursos para você, com os melhores preços!</marquee></strong>
-<br>
-<hr>
-<hr>
-<hr>
-<br>
-<div class="slideshow-container">
-    <div class="slide fade">
-        <img src="/img/anuncio2.png" alt="anuncio">
-    </div>
-    <div class="slide fade">
-        <img src="/img/anuncio3.png" alt="anuncio2">
-    </div>
-    <div class="slide fade">
-        <img src="/img/anuncio4.png" alt="anuncio3">
-    </div>
-</div>
+<div th:replace="/html/topo"></div>
+<link rel="stylesheet" href="/css/PaginaInicial.css">
 
 
-<h1>Estudar+educ. Os melhores cursos para você, com os melhores preços!</h1>
+
+
+
+<h1>VisionTech Os melhores produtos para você, com os melhores preços!</h1>
 <h1>Venha Conferir.</h1>
 <br>
-<h2>Os mais acessados!</h2>
-<section class="produto">
-    <img src="java.png" alt="Java">
-    <h3>Java</h3>
-    <p>Aprenda Java COMPLETO 2023 </p>
-    <p>54,5 horas no total.398 aulas. Todos os níveis</p>
-    <p class="preco">R$ 130,00</p>
-    <a href="carrinho.html">
-        <button type="button">Comprar</button>
-    
-    </a>
-</section>
-<br>
-<hr>
-<hr>
-<hr>
-<br>
-<footer>
-    <p>Todos os direitos reservados &copy; Estudar+educ. 2023 </p>
-</footer>
-<script src="/js/PaginaInicial.js"></script>
-</body>
-</html>
+<div th:replace="/html/produtos"></div>
+<div th:replace="/html/footer"></div>

@@ -1,21 +1,7 @@
 
-	let slideIndex = 0;
-showSlides();
+const navbar = document.querySelector(".navbar");
+const menuButton = document.querySelector(".menu-button");
 
-function showSlides() {
-    let slides = document.getElementsByClassName("slide");
-   
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-   
-    slideIndex++;
-   
-    if (slideIndex > slides.length) {
-        slideIndex = 1;
-    }
-   
-    slides[slideIndex - 1].style.display = "block";
-   
-    setTimeout(showSlides, 2000); // Mude o slide a cada 2 segundos (2000 milissegundos)
-}
+menuButton.addEventListener("click", () => {
+    navbar.classList.toggle("show-menu");
+});
